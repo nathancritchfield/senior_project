@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "DRV8301_")(type "KiCad")(uri "${KIPRJMOD}/lib_fp/DRV8301_.pretty")(options "")(descr ""))
+  (lib (name "MCU_")(type "KiCad")(uri "${KIPRJMOD}/lib_fp/MCU_.pretty")(options "")(descr ""))
+  (lib (name "Power_")(type "KiCad")(uri "${KIPRJMOD}/lib_fp/Power_.pretty")(options "")(descr ""))
+  (lib (name "Root_")(type "KiCad")(uri "${KIPRJMOD}/lib_fp/Root_.pretty")(options "")(descr ""))
+  (lib (name "CAN_")(type "KiCad")(uri "${KIPRJMOD}/lib_fp/CAN_.pretty")(options "")(descr ""))
+)
