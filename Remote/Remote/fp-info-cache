@@ -1,4 +1,4 @@
-22087040957552136
+22107481620040095
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -61194,6 +61194,27 @@ Yellow 5381 Series LED
 2
 2
 MCU_
+0603
+
+
+0
+2
+2
+MCU_
+CAPC1005X55N
+
+
+0
+2
+2
+MCU_
+CONN2_M20-999_1x2_HRW
+
+M20-9990246 
+0
+2
+2
+MCU_
 CONN5_0511121_WRE
 
 61300511121 
@@ -61201,12 +61222,40 @@ CONN5_0511121_WRE
 5
 5
 MCU_
+LEDC1608X35N
+
+
+0
+2
+2
+MCU_
+RESC2012X65N
+
+
+0
+2
+2
+MCU_
+SW_TL1105BF160Q
+
+
+0
+4
+4
+MCU_
 TE_640445-4
 
 
 0
 4
 4
+MCU_
+Wire_Via
+
+
+0
+1
+1
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -80759,6 +80808,13 @@ Potentiometer vertical Vishay T73YP
 3
 3
 Power_
+CAPC1608X90N
+
+
+0
+2
+2
+Power_
 GCT_USB4125-GF-A_REVA2
 
 
@@ -80767,6 +80823,34 @@ GCT_USB4125-GF-A_REVA2
 10
 Power_
 JST_B2B-XH-A
+
+
+0
+2
+2
+Power_
+RESC1005X40N
+
+
+0
+2
+2
+Power_
+RESC1608X50N
+
+
+0
+2
+2
+Power_
+RESC1608X55N
+
+
+0
+2
+2
+Power_
+RESC3116X65N
 
 
 0
