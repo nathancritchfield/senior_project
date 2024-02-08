@@ -26,10 +26,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-//#include "GUI_Paint.h"
-//#include "fonts.h"
-//#include "image.h"
-//#include "LCD_Test.h"
+#include "GUI_Paint.h"
+#include "fonts.h"
+#include "image.h"
+#include "LCD_Test.h"
 
 /* USER CODE END Includes */
 
@@ -91,10 +91,14 @@ void LCD_WriteData_Word(uint16_t _dat)
 void LCD1in28works(void){//LCD_Reset
     HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_RESET);
     HAL_Delay(100);
+    HAL_GPIO_WritePin(RST_GPIO_Port, RST_Pin, GPIO_PIN_SET);
+    HAL_Delay(100);
     HAL_GPIO_WritePin(RST_GPIO_Port, RST_Pin, GPIO_PIN_RESET);
     HAL_Delay(100);
     HAL_GPIO_WritePin(RST_GPIO_Port, RST_Pin, GPIO_PIN_SET);
     HAL_Delay(100);
+
+
 
     /************* Start Initial Sequence **********/
       LCD_WriteReg(0xEF);
@@ -427,7 +431,8 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
-  LCD1in28works();
+  //LCD1in28works();
+  LCD_1in28_test();
 
   /* USER CODE END 2 */
 

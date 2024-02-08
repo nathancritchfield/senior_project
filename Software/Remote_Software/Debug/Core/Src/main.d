@@ -37,7 +37,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h \
  ../Core/Inc/adc.h ../Core/Inc/main.h ../Core/Inc/spi.h ../Core/Inc/tim.h \
- ../Core/Inc/usart.h ../Core/Inc/gpio.h
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV/GUI_Paint.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config/DEV_Config.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts/fonts.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/image/image.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example/LCD_Test.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 ../Core/Inc/stm32g0xx_hal_conf.h:
@@ -82,3 +87,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/gpio.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV/GUI_Paint.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config/DEV_Config.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts/fonts.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/image/image.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example/LCD_Test.h:

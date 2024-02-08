@@ -53,8 +53,6 @@ int DEV_Module_Init(void)
     DEV_Digital_Write(DEV_CS_PIN, 1);
     DEV_Digital_Write(DEV_RST_PIN, 1);
     HAL_TIM_PWM_Start(&htim16, TIM_CHANNEL_1);
-    //Adding this as a test
-    //TIM16->CCR1 = 1000;
 		return 0;
 }
 
