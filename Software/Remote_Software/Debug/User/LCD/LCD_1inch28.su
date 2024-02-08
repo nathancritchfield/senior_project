@@ -7,7 +7,7 @@
 ../User/LCD/LCD_1inch28.c:351:6:LCD_1IN28_Init	16	static
 ../User/LCD/LCD_1inch28.c:374:6:LCD_1IN28_SetWindows	24	static
 ../User/LCD/LCD_1inch28.c:397:6:LCD_1IN28_Clear	24	static
-../User/LCD/LCD_1inch28.c:414:6:LCD_1IN28_Display	32	static
-../User/LCD/LCD_1inch28.c:427:6:LCD_1IN28_DisplayWindows	32	static
-../User/LCD/LCD_1inch28.c:451:6:LCD_1IN28_DrawPaint	24	static
-../User/LCD/LCD_1inch28.c:463:6:LCD_1IN28_SetBackLight	16	static
+../User/LCD/LCD_1inch28.c:413:6:LCD_1IN28_Display	32	static
+../User/LCD/LCD_1inch28.c:426:6:LCD_1IN28_DisplayWindows	32	static
+../User/LCD/LCD_1inch28.c:450:6:LCD_1IN28_DrawPaint	24	static
+../User/LCD/LCD_1inch28.c:462:6:LCD_1IN28_SetBackLight	16	static
