@@ -1,5 +1,4 @@
 User/example/LCD_1inch28_test.o: ../User/example/LCD_1inch28_test.c \
- C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/image/image.h \
  ../User/example/LCD_Test.h \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config/DEV_Config.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h \
@@ -44,7 +43,6 @@ User/example/LCD_1inch28_test.o: ../User/example/LCD_1inch28_test.c \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV/GUI_Paint.h \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts/fonts.h \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/LCD/LCD_1in28.h
-C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/image/image.h:
 ../User/example/LCD_Test.h:
 C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config/DEV_Config.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:

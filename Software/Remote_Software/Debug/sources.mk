@@ -30,5 +30,4 @@ User/Fonts \
 User/GUI_DEV \
 User/LCD \
 User/example \
-User/image \
 

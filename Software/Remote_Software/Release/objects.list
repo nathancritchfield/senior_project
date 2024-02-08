@@ -39,4 +39,3 @@
 "./User/GUI_DEV/GUI_Paint.o"
 "./User/LCD/LCD_1inch28.o"
 "./User/example/LCD_1inch28_test.o"
-"./User/image/image.o"

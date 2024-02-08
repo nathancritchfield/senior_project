@@ -41,8 +41,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV/GUI_Paint.h \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config/DEV_Config.h \
  C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts/fonts.h \
- C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/image/image.h \
- C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example/LCD_Test.h
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example/LCD_Test.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/LCD/LCD_1in28.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 ../Core/Inc/stm32g0xx_hal_conf.h:
@@ -90,5 +90,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV/GUI_Paint.h:
 C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config/DEV_Config.h:
 C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts/fonts.h:
-C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/image/image.h:
 C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example/LCD_Test.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/LCD/LCD_1in28.h:

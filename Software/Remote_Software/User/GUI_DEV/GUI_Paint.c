@@ -618,11 +618,11 @@ void Paint_DrawString_CN(UWORD Xstart, UWORD Ystart, const char * pString, cFONT
 }
 
 /******************************************************************************
-function:	Display nummber
+function:	Display number
 parameter:
     Xstart           ：X coordinate
     Ystart           : Y coordinate
-    Nummber          : The number displayed
+    Number          : The number displayed
     Font             ：A structure pointer that displays a character size
     Color_Background : Select the background color of the English character
     Color_Foreground : Select the foreground color of the English character

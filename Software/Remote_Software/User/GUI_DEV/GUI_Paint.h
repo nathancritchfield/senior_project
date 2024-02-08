@@ -123,13 +123,16 @@ typedef enum {
 #define BROWN					0XBC40 
 #define BRRED					0XFC07 
 #define GRAY 					0X8430 
-#define DARKBLUE			0X01CF	
+#define DARKBLUE			0X0908
 #define LIGHTBLUE			0X7D7C	 
 #define GRAYBLUE      0X5458 
 #define LIGHTGREEN    0X841F 
 #define LGRAY 			  0XC618 
 #define LGRAYBLUE     0XA651
 #define LBBLUE        0X2B12 
+#define DARKRED		  0X6862
+#define DARKGREEN		  0X4C42
+#define DARKORANGE		  0XAB84
 
 
 #define IMAGE_BACKGROUND    WHITE

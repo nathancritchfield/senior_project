@@ -28,8 +28,8 @@
 /* USER CODE BEGIN Includes */
 #include "GUI_Paint.h"
 #include "fonts.h"
-#include "image.h"
 #include "LCD_Test.h"
+#include "LCD_1in28.h"
 
 /* USER CODE END Includes */
 
@@ -432,7 +432,28 @@ int main(void)
   MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
   //LCD1in28works();
-  LCD_1in28_test();
+  //LCD_1in28_test();
+
+  uint8_t counter = 0;
+
+  	DEV_Module_Init();
+
+  	LCD_1IN28_SetBackLight(1000);
+  	LCD_1IN28_Init(VERTICAL);
+   	//LCD_1IN28_Clear(BLACK);
+
+  	Paint_NewImage(LCD_1IN28_WIDTH,LCD_1IN28_HEIGHT, 0, BLACK);
+
+  	Paint_SetClearFuntion(LCD_1IN28_Clear);
+  	Paint_SetDisplayFuntion(LCD_1IN28_DrawPaint);
+  	Paint_DrawString_EN(70, 100, "LOADING...", &Font16, BLACK, DARKORANGE);
+
+  	Paint_Clear(DARKBLUE);
+  	DEV_Delay_ms(100);
+
+  	Paint_DrawRectangle(115, 115, 136, 141, DARKRED, 2, 0);
+	  Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
+
 
   /* USER CODE END 2 */
 
@@ -440,6 +461,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+	  if(HAL_GPIO_ReadPin (Button_In_GPIO_Port, Button_In_Pin) == GPIO_PIN_RESET){
+		  counter++;
+		  Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
+		  HAL_Delay(250);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

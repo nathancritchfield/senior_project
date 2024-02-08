@@ -86,13 +86,13 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User/Config"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User/Fonts"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User/GUI_DEV"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User/LCD"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User/example"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="User/Config"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
