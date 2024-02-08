@@ -1,0 +1,4 @@
+../User/Config/DEV_Config.c:39:6:DEV_delay_ms	8	static
+../User/Config/DEV_Config.c:45:6:DEV_SPI_WRite	16	static
+../User/Config/DEV_Config.c:50:5:DEV_Module_Init	8	static
+../User/Config/DEV_Config.c:61:6:DEV_Module_Exit	8	static

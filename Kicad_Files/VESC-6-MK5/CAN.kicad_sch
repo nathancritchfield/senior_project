@@ -610,7 +610,7 @@
     (property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm" (at 143.51 109.22 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "http://www.nxp.com/documents/data_sheet/TJA1051.pdf" (at 143.51 96.52 0)
+    (property "Datasheet" "TJA1051TK/3,118" (at 143.51 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid be42808d-5a58-467d-a899-cdea18f7daba))
