@@ -1,0 +1,48 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid b4382ef4-8540-4cf0-8bf7-60a21f991ddf)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 120.65 63.5) (size 21.59 39.37) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 12abbf4f-9c67-4426-aa4f-39d550a56952)
+    (property "Sheetname" "MCU" (at 120.65 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MCU.kicad_sch" (at 120.65 103.4546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Receiver_KiCad"
+        (path "/b4382ef4-8540-4cf0-8bf7-60a21f991ddf" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 86.36 63.5) (size 21.59 39.37) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d6ef35f0-db14-4fb6-a886-f39262892cda)
+    (property "Sheetname" "Power" (at 86.36 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 86.36 103.4546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Receiver_KiCad"
+        (path "/b4382ef4-8540-4cf0-8bf7-60a21f991ddf" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
