@@ -82,14 +82,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Core/Src/main.o
  .data          0x0000000000000000        0x0 ./Core/Src/main.o
  .bss           0x0000000000000000        0x0 ./Core/Src/main.o
- .text.LCD_WriteReg
-                0x0000000000000000       0x4c ./Core/Src/main.o
- .text.LCD_WriteData_Byte
-                0x0000000000000000       0x4c ./Core/Src/main.o
- .text.LCD_WriteData_Word
-                0x0000000000000000       0x68 ./Core/Src/main.o
- .text.LCD1in28works
-                0x0000000000000000      0x528 ./Core/Src/main.o
  .text          0x0000000000000000        0x0 ./Core/Src/spi.o
  .data          0x0000000000000000        0x0 ./Core/Src/spi.o
  .bss           0x0000000000000000        0x0 ./Core/Src/spi.o
