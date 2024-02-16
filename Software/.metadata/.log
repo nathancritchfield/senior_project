@@ -1,0 +1,1878 @@
+!SESSION 2024-02-07 22:56:11.719 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\nate_\Documents\Electric_Skateboard\Software
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-07 22:56:18.517
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-07 22:56:18.526
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-07 22:56:21.875
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-02-07 22:57:57.637 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-07 22:58:01.987
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-07 22:58:01.990
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-07 22:58:05.161
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 22:59:45.154
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 22:59:45.154
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 22:59:45.154
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY org.eclipse.core.resources 4 368 2024-02-07 22:59:45.165
+!MESSAGE Resource '/Remote' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Remote' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:183)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.openReadmeFile(AbstractCubeIDEProjectConfigurator.java:1008)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$3.run(MCUProjectImporter.java:387)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SESSION 2024-02-07 23:00:20.142 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-07 23:00:24.834
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-07 23:00:24.835
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-07 23:00:28.213
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:00:28.371
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:00:28.371
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:00:28.371
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY org.eclipse.core.resources 4 368 2024-02-07 23:00:28.378
+!MESSAGE Resource '/Remote' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Remote' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:183)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.openReadmeFile(AbstractCubeIDEProjectConfigurator.java:1008)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$3.run(MCUProjectImporter.java:387)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-07 23:02:58.364
+!MESSAGE Indexed 'Remote_Software' (42 sources, 176 headers) in 5.65 sec: 16,979 declarations; 87,884 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.16%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:03:31.874
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:03:31.874
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:03:31.874
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:03:31.875
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:04:05.882
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:04:05.882
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:04:05.882
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:04:05.882
+!MESSAGE Project is null
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-02-07 23:04:13.287
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:04:54.054
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:04:54.054
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:04:54.054
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:04:54.054
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:04:54.265
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:04:54.265
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:04:54.265
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:04:54.266
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:05:21.189
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:05:21.189
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:05:21.189
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:05:21.190
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:05:27.152
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:05:27.152
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:05:27.152
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:05:27.153
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:05:41.936
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:05:41.936
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:05:41.936
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:05:41.937
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:05:45.363
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:05:45.363
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:05:45.363
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:05:45.363
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:05:45.543
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:05:45.543
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:05:45.543
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:05:45.543
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:06:31.250
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:06:31.250
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:06:31.250
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:06:31.250
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-07 23:06:33.948
+!MESSAGE Indexed 'Remote_Software' (41 sources, 137 headers) in 3.14 sec: 13,858 declarations; 77,750 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:08:03.424
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:08:03.424
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:08:03.425
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:08:03.425
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:08:03.587
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:08:03.587
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:08:03.587
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:08:03.587
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:08:24.668
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:08:24.668
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:08:24.668
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:08:24.669
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:08:24.900
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:08:24.900
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:08:24.900
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:08:24.900
+!MESSAGE Project is null
+!SESSION 2024-02-07 23:15:38.042 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-07 23:15:43.332
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-07 23:15:43.334
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-07 23:15:49.444
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:22:58.371
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:22:58.371
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:22:58.371
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:22:58.372
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-07 23:23:02.064
+!MESSAGE Indexed 'Remote_Software' (42 sources, 137 headers) in 3.79 sec: 13,879 declarations; 78,166 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:23:28.064
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:23:28.064
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:23:28.064
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:23:28.064
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:23:46.568
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:23:46.568
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:23:46.568
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:23:46.568
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:23:46.812
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:23:46.812
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:23:46.812
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:23:46.812
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:24:20.243
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:24:20.243
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:24:20.243
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:24:20.245
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:24:31.592
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:24:31.592
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:24:31.592
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:24:31.592
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:24:41.480
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:24:41.480
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:24:41.480
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:24:41.481
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:24:41.624
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:24:41.624
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:24:41.624
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:24:41.624
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:44:13.538
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:44:13.538
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:44:13.538
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:44:13.539
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:47:28.220
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:47:28.220
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:47:28.220
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:47:28.221
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:47:28.364
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:47:28.364
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:47:28.364
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:47:28.364
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:48:19.501
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:48:19.501
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:48:19.501
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:48:19.502
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:48:19.644
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:48:19.644
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:48:19.644
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:48:19.645
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:49:47.144
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:49:47.144
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:49:47.144
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:49:47.145
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:49:59.298
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:49:59.298
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:49:59.298
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:49:59.299
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:49:59.441
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:49:59.441
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:49:59.441
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:49:59.441
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:52:39.212
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:52:39.212
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:52:39.212
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:52:39.213
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:52:41.610
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:52:41.610
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:52:41.610
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:52:41.610
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-07 23:52:41.747
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-07 23:52:41.747
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-07 23:52:41.747
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-07 23:52:41.747
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:00:21.895
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:00:21.895
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:00:21.895
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:00:21.896
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:00:59.654
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:00:59.654
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:00:59.654
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:00:59.655
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:01:06.502
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:01:06.502
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:01:06.502
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:01:06.503
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:01:06.635
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:01:06.635
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:01:06.635
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:01:06.635
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:01:42.117
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:01:42.117
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:01:42.117
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:01:42.118
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:01:45.656
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:01:45.656
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:01:45.656
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:01:45.656
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:01:45.789
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:01:45.790
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:01:45.790
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:01:45.790
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:02:31.169
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:02:31.169
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:02:31.169
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:02:31.169
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:02:34.212
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:02:34.212
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:02:34.212
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:02:34.212
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:02:34.341
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:02:34.342
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:02:34.342
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:02:34.342
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:03:18.144
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:03:18.144
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:03:18.144
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:03:18.145
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:03:21.994
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:03:21.994
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:03:21.994
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:03:21.995
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:03:22.133
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:03:22.133
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:03:22.133
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:03:22.134
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:07:32.107
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:07:32.107
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:07:32.107
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:07:32.107
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:07:37.978
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:07:37.978
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:07:37.978
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:07:37.979
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:07:38.107
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:07:38.107
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:07:38.107
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:07:38.107
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:08:30.027
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:08:30.027
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:08:30.027
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:08:30.027
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:08:32.859
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:08:32.859
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:08:32.859
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:08:32.860
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:08:32.987
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:08:32.987
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:08:32.987
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:08:32.987
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:09:21.065
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:09:21.065
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:09:21.065
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:09:21.066
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:09:24.601
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:09:24.601
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:09:24.601
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:09:24.601
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:09:24.725
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:09:24.725
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:09:24.725
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:09:24.725
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:10:19.385
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:10:19.385
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:10:19.385
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:10:19.385
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 00:10:21.639
+!MESSAGE Indexed 'Remote_Software' (41 sources, 137 headers) in 2.26 sec: 13,860 declarations; 77,795 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:10:29.987
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:10:29.987
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:10:29.987
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:10:29.988
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:10:30.113
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:10:30.113
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:10:30.113
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:10:30.113
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:11:39.638
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:11:39.639
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:11:39.639
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:11:39.639
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:11:47.610
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:11:47.610
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:11:47.610
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:11:47.610
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:11:47.730
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:11:47.730
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:11:47.730
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:11:47.731
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:12:25.310
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:12:25.310
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:12:25.310
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:12:25.311
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:12:29.797
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:12:29.797
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:12:29.797
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:12:29.798
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:12:29.927
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:12:29.927
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:12:29.927
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:12:29.927
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:13:23.049
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:13:23.049
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:13:23.049
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:13:23.049
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 00:13:24.987
+!MESSAGE Indexed 'Remote_Software' (41 sources, 137 headers) in 1.95 sec: 13,860 declarations; 77,829 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:13:40.568
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:13:40.568
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:13:40.568
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:13:40.568
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 00:13:42.318
+!MESSAGE Indexed 'Remote_Software' (41 sources, 137 headers) in 1.75 sec: 13,860 declarations; 77,829 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 00:19:57.026
+!MESSAGE Indexed 'New_STM32_Pinout_check' (20 sources, 83 headers) in 1.93 sec: 4,475 declarations; 19,139 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0085%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:20:04.509
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:20:04.509
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:20:04.509
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:20:04.509
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.ui 4 4 2024-02-08 00:20:04.520
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Invalid Input: Must be project's active .ioc file.
+
+Project's 'Remote_Software' active one is 'Remote_Software.ioc' file
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.init(CubeMxEditor.java:852)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at jdk.internal.reflect.GeneratedMethodAccessor95.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:971)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:936)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:142)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:313)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4803)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3233)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3123)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3121)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3091)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3082)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:548)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:508)
+	at org.eclipse.ui.actions.OpenFileAction.openFile(OpenFileAction.java:103)
+	at org.eclipse.ui.actions.OpenSystemEditorAction.run(OpenSystemEditorAction.java:96)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:183)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:801)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:798)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1121)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:452)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-02-08 00:20:04.524
+!MESSAGE Invalid Input: Must be project's active .ioc file.
+
+Project's 'Remote_Software' active one is 'Remote_Software.ioc' file
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 00:20:18.581
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 00:20:18.581
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 00:20:18.581
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-02-08 00:20:18.581
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 2 2024-02-08 01:30:40.176
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Remote_Software/Release/User/image)[368]: java.lang.Exception: Resource '/Remote_Software/Release/User/image' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-02-08 01:30:40.183
+!MESSAGE Resource '/Remote_Software/Release/User/image' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Remote_Software/Release/User/image' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-02-08 01:30:40.183
+!MESSAGE Resource '/Remote_Software/Release/User/image' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Remote_Software/Release/User/image' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2024-02-08 01:30:40.373
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 75 2024-02-08 01:30:40.373
+!MESSAGE Errors running builder 'CDT Builder' on project 'Remote_Software'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Remote_Software/Release/User/image)[368]: java.lang.Exception: Resource '/Remote_Software/Release/User/image' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.core.resources 4 368 2024-02-08 01:30:40.373
+!MESSAGE Resource '/Remote_Software/Release/User/image' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Remote_Software/Release/User/image' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2024-02-08 01:30:40.373
+!MESSAGE Resource '/Remote_Software/Release/User/image' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Remote_Software/Release/User/image' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.oss.makefile.MakefileGenerator.generateDependencies(MakefileGenerator.java:630)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPostbuildGeneration(CommonBuilder.java:869)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:781)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:521)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:466)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-02-08 01:31:19.365
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-02-08 01:31:19.365
+!MESSAGE Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-02-08 01:34:53.464
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-02-08 01:34:53.464
+!MESSAGE Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 01:53:51.823
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 01:53:51.823
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 01:53:51.823
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 02:00:48.279
+!MESSAGE Indexed 'Remote_Software' (40 sources, 136 headers) in 2.18 sec: 13,861 declarations; 77,859 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+!SESSION 2024-02-08 12:22:20.827 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-08 12:23:00.108
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-08 12:23:00.117
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-08 12:23:18.144
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 22:19:01.739
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 22:19:01.739
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 22:19:01.739
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 22:20:12.715
+!MESSAGE Indexed 'Remote_Software' (41 sources, 136 headers) in 4.88 sec: 13,861 declarations; 77,663 references; 3 unresolved inclusions; 26 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-02-08 22:21:29.573
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-02-08 22:21:29.573
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-02-08 22:21:29.573
+!MESSAGE C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software overlaps the location of another project: 'Remote_Software'
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 23:32:03.076
+!MESSAGE Indexed 'Remote_Software' (41 sources, 136 headers) in 3.35 sec: 13,875 declarations; 77,703 references; 3 unresolved inclusions; 26 syntax errors; 173 unresolved names (0.19%)
+
+!ENTRY org.eclipse.jface 2 0 2024-02-08 23:46:50.782
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-02-08 23:46:50.782
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Searches for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.cdt.ui.search.finddecl"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.command.gotoaddress,Go to Address,
+		Go to Address,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering$16@2ef6f38e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.memory.abstractasynctablerendering,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2024-02-09 00:34:42.429
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1999)
+	at org.eclipse.cdt.debug.ui.memory.traditional.RenderingAddressInfo$1.lambda$0(RenderingAddressInfo.java:263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2024-02-09 00:34:42.435
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1999)
+	at org.eclipse.cdt.debug.ui.memory.traditional.RenderingAddressInfo$1.lambda$0(RenderingAddressInfo.java:263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2024-02-09 00:34:42.436
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1999)
+	at org.eclipse.cdt.debug.ui.memory.traditional.RenderingAddressInfo$1.lambda$0(RenderingAddressInfo.java:263)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:36:38.963
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:36:38.967
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:37:55.631
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:37:55.632
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:38:09.238
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:38:09.239
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:38:22.012
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:38:22.012
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:38:31.480
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:38:31.480
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:38:38.707
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:38:38.708
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:39:53.860
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:39:53.861
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-09 00:39:59.195
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-09 00:39:59.197
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:370)
+	at org.eclipse.swt.widgets.Table.setRedraw(Table.java:4696)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1425)
+	at org.eclipse.debug.internal.ui.memory.provisional.AbstractAsyncTableRendering.refresh(AbstractAsyncTableRendering.java:2107)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.handleMemoryBlockChanged(AsyncTableRenderingUpdatePolicy.java:145)
+	at org.eclipse.debug.internal.ui.views.memory.renderings.AsyncTableRenderingUpdatePolicy.modelChanged(AsyncTableRenderingUpdatePolicy.java:76)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy$1.run(AbstractModelProxy.java:92)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.ui.viewers.provisional.AbstractModelProxy.fireModelChanged(AbstractModelProxy.java:96)
+	at org.eclipse.debug.internal.ui.viewers.update.MemoryBlockProxy$1.handleChange(MemoryBlockProxy.java:54)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.dispatchChange(EventHandlerModelProxy.java:237)
+	at org.eclipse.debug.internal.ui.viewers.update.EventHandlerModelProxy.handleDebugEvents(EventHandlerModelProxy.java:137)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1259)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:491)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-09 01:31:05.487
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 23 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-09 01:31:05.489
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-09 01:31:05.491
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 23 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-09 01:31:05.491
+!MESSAGE Existing sessions are:
+!SESSION 2024-02-13 22:00:43.218 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-13 22:01:26.671
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-13 22:01:26.691
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-13 22:01:40.833
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-13 22:07:09.200
+!MESSAGE Indexed 'Receiver' (20 sources, 83 headers) in 5.99 sec: 4,475 declarations; 19,139 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0085%)
+!SESSION 2024-02-14 10:57:59.268 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-14 10:58:50.374
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-14 10:58:50.386
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-14 10:59:13.007
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-02-15 16:35:48.485 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-15 16:36:07.716
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-15 16:36:07.731
+!MESSAGE Log4j2 initialized with config file C:\Users\nate_\Documents\Electric_Skateboard\Software\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-15 16:36:20.135
+!MESSAGE Started RMI Server, listening on port 41337

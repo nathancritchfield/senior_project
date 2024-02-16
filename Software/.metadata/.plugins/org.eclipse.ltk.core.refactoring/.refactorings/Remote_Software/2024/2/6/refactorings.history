@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Remote_Software/Remote.ioc&apos; to &apos;Remote_Software.ioc&apos;" description="Rename resource &apos;Remote.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Remote.ioc" name="Remote_Software.ioc" stamp="1707376836706" updateReferences="true"/>
+</session>

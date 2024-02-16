@@ -1,0 +1,16 @@
+01:35:39 **** Incremental Build of configuration Debug for project Remote_Software ****
+make -j12 all 
+arm-none-eabi-gcc -o "Remote_Software.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software\STM32G030F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Remote_Software.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Remote_Software.elf
+ 
+arm-none-eabi-size  Remote_Software.elf 
+arm-none-eabi-objdump -h -S Remote_Software.elf  > "Remote_Software.list"
+   text	   data	    bss	    dec	    hex	filename
+  27776	     28	   2132	  29936	   74f0	Remote_Software.elf
+Finished building: default.size.stdout
+ 
+Finished building: Remote_Software.list
+ 
+
+01:35:40 Build Finished. 0 errors, 0 warnings. (took 1s.41ms)
+
