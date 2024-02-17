@@ -436,8 +436,8 @@ int main(void)
   //LCD1in28works();
   //LCD_1in28_test();
 
-  uint64_t counter = 0;
-  uint16_t raw = 0;
+  int32_t counter = 0;
+  int32_t raw = 0;
 
 
   	DEV_Module_Init();
@@ -470,6 +470,7 @@ int main(void)
 	  	  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
 	      raw = HAL_ADC_GetValue(&hadc1);
 		  counter++;
+		  Paint_ClearWindows(120, 100, 164, 116, BLACK);
 		  Paint_DrawNum(120, 100, raw, &Font16, DARKBLUE, DARKGREEN);
 		  Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
 		  HAL_Delay(250);
@@ -501,7 +502,12 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
+  RCC_OscInitStruct.PLL.PLLN = 8;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -511,11 +517,11 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
