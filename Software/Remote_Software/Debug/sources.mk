@@ -25,6 +25,7 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32G0xx_HAL_Driver/Src \
+NRF24L01 \
 User/Config \
 User/Fonts \
 User/GUI_DEV \

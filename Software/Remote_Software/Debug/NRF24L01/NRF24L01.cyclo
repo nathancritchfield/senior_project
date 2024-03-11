@@ -1,0 +1,8 @@
+../NRF24L01/NRF24L01.c:10:9:nrf_read_reg	1
+../NRF24L01/NRF24L01.c:23:6:nrf_read_reg_multi	1
+../NRF24L01/NRF24L01.c:32:6:nrf_write_reg	1
+../NRF24L01/NRF24L01.c:44:6:nrf_write_reg_multi	1
+../NRF24L01/NRF24L01.c:56:6:nrf_send_cmd	1
+../NRF24L01/NRF24L01.c:64:6:nrf_init	1
+../NRF24L01/NRF24L01.c:85:6:nrf_tx_mode	1
+../NRF24L01/NRF24L01.c:98:9:nrf_transmit	3

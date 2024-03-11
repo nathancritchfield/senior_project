@@ -33,6 +33,7 @@
 "./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_adc.o"
 "./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_dma.o"
 "./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o"
+"./NRF24L01/NRF24L01.o"
 "./User/Config/DEV_Config.o"
 "./User/Fonts/font16.o"
 "./User/Fonts/font24CN.o"

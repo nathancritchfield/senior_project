@@ -14,6 +14,7 @@ RM := rm -rf
 -include User/GUI_DEV/subdir.mk
 -include User/Fonts/subdir.mk
 -include User/Config/subdir.mk
+-include NRF24L01/subdir.mk
 -include Drivers/STM32G0xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
