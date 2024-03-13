@@ -452,7 +452,7 @@ int main(void)
   	Paint_SetDisplayFuntion(LCD_1IN28_DrawPaint);
   	Paint_DrawString_EN(70, 100, "LOADING...", &Font16, BLACK, DARKORANGE);
 
-  	Paint_Clear(DARKBLUE);
+  	Paint_Clear(WHITE);
   	DEV_Delay_ms(100);
 
   	Paint_DrawRectangle(115, 115, 136, 141, DARKRED, 2, 0);

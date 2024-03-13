@@ -712,7 +712,7 @@ Disassembly of section .text:
 
 0800061c <main>:
  800061c:	b5f0      	push	{r4, r5, r6, r7, lr}
- 800061e:	b087      	sub	sp, #28
+ 800061e:	b085      	sub	sp, #20
  8000620:	f000 fab0 	bl	8000b84 <HAL_Init>
  8000624:	f7ff ffc0 	bl	80005a8 <SystemClock_Config>
  8000628:	f7ff ff58 	bl	80004dc <MX_GPIO_Init>
@@ -733,45 +733,45 @@ Disassembly of section .text:
  8000658:	001a      	movs	r2, r3
  800065a:	0008      	movs	r0, r1
  800065c:	f002 fb62 	bl	8002d24 <Paint_NewImage>
- 8000660:	482d      	ldr	r0, [pc, #180]	; (8000718 <main+0xfc>)
+ 8000660:	482c      	ldr	r0, [pc, #176]	; (8000714 <main+0xf8>)
  8000662:	f002 fb75 	bl	8002d50 <Paint_SetClearFuntion>
- 8000666:	482d      	ldr	r0, [pc, #180]	; (800071c <main+0x100>)
+ 8000666:	482c      	ldr	r0, [pc, #176]	; (8000718 <main+0xfc>)
  8000668:	f002 fb78 	bl	8002d5c <Paint_SetDisplayFuntion>
- 800066c:	4d2c      	ldr	r5, [pc, #176]	; (8000720 <main+0x104>)
- 800066e:	4b2d      	ldr	r3, [pc, #180]	; (8000724 <main+0x108>)
- 8000670:	4e2d      	ldr	r6, [pc, #180]	; (8000728 <main+0x10c>)
- 8000672:	2164      	movs	r1, #100	; 0x64
- 8000674:	4a2d      	ldr	r2, [pc, #180]	; (800072c <main+0x110>)
- 8000676:	2046      	movs	r0, #70	; 0x46
- 8000678:	9301      	str	r3, [sp, #4]
- 800067a:	9400      	str	r4, [sp, #0]
- 800067c:	002b      	movs	r3, r5
- 800067e:	f002 fd83 	bl	8003188 <Paint_DrawString_EN>
- 8000682:	0030      	movs	r0, r6
- 8000684:	f002 fbc0 	bl	8002e08 <Paint_Clear>
- 8000688:	2064      	movs	r0, #100	; 0x64
- 800068a:	f000 faa1 	bl	8000bd0 <HAL_Delay>
- 800068e:	2302      	movs	r3, #2
- 8000690:	2173      	movs	r1, #115	; 0x73
- 8000692:	9301      	str	r3, [sp, #4]
- 8000694:	4b26      	ldr	r3, [pc, #152]	; (8000730 <main+0x114>)
- 8000696:	0008      	movs	r0, r1
- 8000698:	2288      	movs	r2, #136	; 0x88
+ 800066c:	4e2b      	ldr	r6, [pc, #172]	; (800071c <main+0x100>)
+ 800066e:	4b2c      	ldr	r3, [pc, #176]	; (8000720 <main+0x104>)
+ 8000670:	2164      	movs	r1, #100	; 0x64
+ 8000672:	4a2c      	ldr	r2, [pc, #176]	; (8000724 <main+0x108>)
+ 8000674:	2046      	movs	r0, #70	; 0x46
+ 8000676:	9301      	str	r3, [sp, #4]
+ 8000678:	9400      	str	r4, [sp, #0]
+ 800067a:	0033      	movs	r3, r6
+ 800067c:	f002 fd84 	bl	8003188 <Paint_DrawString_EN>
+ 8000680:	4829      	ldr	r0, [pc, #164]	; (8000728 <main+0x10c>)
+ 8000682:	f002 fbc1 	bl	8002e08 <Paint_Clear>
+ 8000686:	2064      	movs	r0, #100	; 0x64
+ 8000688:	f000 faa2 	bl	8000bd0 <HAL_Delay>
+ 800068c:	2302      	movs	r3, #2
+ 800068e:	2173      	movs	r1, #115	; 0x73
+ 8000690:	9301      	str	r3, [sp, #4]
+ 8000692:	4b26      	ldr	r3, [pc, #152]	; (800072c <main+0x110>)
+ 8000694:	0008      	movs	r0, r1
+ 8000696:	2288      	movs	r2, #136	; 0x88
+ 8000698:	9300      	str	r3, [sp, #0]
  800069a:	9402      	str	r4, [sp, #8]
- 800069c:	9300      	str	r3, [sp, #0]
- 800069e:	238d      	movs	r3, #141	; 0x8d
- 80006a0:	f002 fcb2 	bl	8003008 <Paint_DrawRectangle>
- 80006a4:	2178      	movs	r1, #120	; 0x78
- 80006a6:	4b23      	ldr	r3, [pc, #140]	; (8000734 <main+0x118>)
- 80006a8:	0022      	movs	r2, r4
- 80006aa:	9301      	str	r3, [sp, #4]
+ 800069c:	238d      	movs	r3, #141	; 0x8d
+ 800069e:	f002 fcb3 	bl	8003008 <Paint_DrawRectangle>
+ 80006a2:	2178      	movs	r1, #120	; 0x78
+ 80006a4:	4b22      	ldr	r3, [pc, #136]	; (8000730 <main+0x114>)
+ 80006a6:	0022      	movs	r2, r4
+ 80006a8:	9301      	str	r3, [sp, #4]
+ 80006aa:	4b22      	ldr	r3, [pc, #136]	; (8000734 <main+0x118>)
  80006ac:	0008      	movs	r0, r1
- 80006ae:	002b      	movs	r3, r5
- 80006b0:	9600      	str	r6, [sp, #0]
+ 80006ae:	9300      	str	r3, [sp, #0]
+ 80006b0:	0033      	movs	r3, r6
  80006b2:	f002 fda7 	bl	8003204 <Paint_DrawNum>
- 80006b6:	9405      	str	r4, [sp, #20]
- 80006b8:	3478      	adds	r4, #120	; 0x78
- 80006ba:	4f1f      	ldr	r7, [pc, #124]	; (8000738 <main+0x11c>)
+ 80006b6:	2578      	movs	r5, #120	; 0x78
+ 80006b8:	4f1f      	ldr	r7, [pc, #124]	; (8000738 <main+0x11c>)
+ 80006ba:	3401      	adds	r4, #1
  80006bc:	0038      	movs	r0, r7
  80006be:	f000 fd8b 	bl	80011d8 <HAL_ADC_Start>
  80006c2:	2101      	movs	r1, #1
@@ -780,45 +780,44 @@ Disassembly of section .text:
  80006c8:	f000 fbaa 	bl	8000e20 <HAL_ADC_PollForConversion>
  80006cc:	0038      	movs	r0, r7
  80006ce:	f000 fc0b 	bl	8000ee8 <HAL_ADC_GetValue>
- 80006d2:	9b05      	ldr	r3, [sp, #20]
+ 80006d2:	2300      	movs	r3, #0
  80006d4:	0007      	movs	r7, r0
- 80006d6:	3301      	adds	r3, #1
- 80006d8:	9305      	str	r3, [sp, #20]
- 80006da:	2300      	movs	r3, #0
- 80006dc:	0020      	movs	r0, r4
- 80006de:	9300      	str	r3, [sp, #0]
- 80006e0:	22a4      	movs	r2, #164	; 0xa4
- 80006e2:	2164      	movs	r1, #100	; 0x64
- 80006e4:	3374      	adds	r3, #116	; 0x74
- 80006e6:	f002 fb97 	bl	8002e18 <Paint_ClearWindows>
- 80006ea:	4b12      	ldr	r3, [pc, #72]	; (8000734 <main+0x118>)
- 80006ec:	003a      	movs	r2, r7
- 80006ee:	0020      	movs	r0, r4
- 80006f0:	9301      	str	r3, [sp, #4]
+ 80006d6:	9300      	str	r3, [sp, #0]
+ 80006d8:	0028      	movs	r0, r5
+ 80006da:	22a4      	movs	r2, #164	; 0xa4
+ 80006dc:	2164      	movs	r1, #100	; 0x64
+ 80006de:	3374      	adds	r3, #116	; 0x74
+ 80006e0:	f002 fb9a 	bl	8002e18 <Paint_ClearWindows>
+ 80006e4:	4b12      	ldr	r3, [pc, #72]	; (8000730 <main+0x114>)
+ 80006e6:	4a13      	ldr	r2, [pc, #76]	; (8000734 <main+0x118>)
+ 80006e8:	0028      	movs	r0, r5
+ 80006ea:	9301      	str	r3, [sp, #4]
+ 80006ec:	9200      	str	r2, [sp, #0]
+ 80006ee:	0033      	movs	r3, r6
+ 80006f0:	003a      	movs	r2, r7
  80006f2:	2164      	movs	r1, #100	; 0x64
- 80006f4:	002b      	movs	r3, r5
- 80006f6:	9600      	str	r6, [sp, #0]
- 80006f8:	f002 fd84 	bl	8003204 <Paint_DrawNum>
- 80006fc:	4b0d      	ldr	r3, [pc, #52]	; (8000734 <main+0x118>)
- 80006fe:	0020      	movs	r0, r4
- 8000700:	9301      	str	r3, [sp, #4]
- 8000702:	0021      	movs	r1, r4
- 8000704:	002b      	movs	r3, r5
- 8000706:	9a05      	ldr	r2, [sp, #20]
- 8000708:	9600      	str	r6, [sp, #0]
- 800070a:	f002 fd7b 	bl	8003204 <Paint_DrawNum>
- 800070e:	20fa      	movs	r0, #250	; 0xfa
- 8000710:	f000 fa5e 	bl	8000bd0 <HAL_Delay>
- 8000714:	e7d1      	b.n	80006ba <main+0x9e>
- 8000716:	46c0      	nop			; (mov r8, r8)
- 8000718:	0800387f 	.word	0x0800387f
- 800071c:	080038ad 	.word	0x080038ad
- 8000720:	2000000c 	.word	0x2000000c
- 8000724:	0000ab84 	.word	0x0000ab84
- 8000728:	00000908 	.word	0x00000908
- 800072c:	0800393c 	.word	0x0800393c
- 8000730:	00006862 	.word	0x00006862
- 8000734:	00004c42 	.word	0x00004c42
+ 80006f4:	f002 fd86 	bl	8003204 <Paint_DrawNum>
+ 80006f8:	4b0d      	ldr	r3, [pc, #52]	; (8000730 <main+0x114>)
+ 80006fa:	4a0e      	ldr	r2, [pc, #56]	; (8000734 <main+0x118>)
+ 80006fc:	0028      	movs	r0, r5
+ 80006fe:	9301      	str	r3, [sp, #4]
+ 8000700:	9200      	str	r2, [sp, #0]
+ 8000702:	0033      	movs	r3, r6
+ 8000704:	0022      	movs	r2, r4
+ 8000706:	0029      	movs	r1, r5
+ 8000708:	f002 fd7c 	bl	8003204 <Paint_DrawNum>
+ 800070c:	20fa      	movs	r0, #250	; 0xfa
+ 800070e:	f000 fa5f 	bl	8000bd0 <HAL_Delay>
+ 8000712:	e7d1      	b.n	80006b8 <main+0x9c>
+ 8000714:	0800387f 	.word	0x0800387f
+ 8000718:	080038ad 	.word	0x080038ad
+ 800071c:	2000000c 	.word	0x2000000c
+ 8000720:	0000ab84 	.word	0x0000ab84
+ 8000724:	0800393c 	.word	0x0800393c
+ 8000728:	0000ffff 	.word	0x0000ffff
+ 800072c:	00006862 	.word	0x00006862
+ 8000730:	00004c42 	.word	0x00004c42
+ 8000734:	00000908 	.word	0x00000908
  8000738:	20000030 	.word	0x20000030
 
 0800073c <Error_Handler>:
