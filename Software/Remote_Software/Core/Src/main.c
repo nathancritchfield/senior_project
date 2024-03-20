@@ -1,5 +1,6 @@
 /* USER CODE BEGIN Header */
-#define END_OF_USER_FLASH 0x08000000
+//#define NRF24L01P_CMD_R_REGISTER                  0b00000000
+//#define NRF24L01P_CMD_W_REGISTER                  0b00100000
 /**
   ******************************************************************************
   * @file           : main.c
@@ -32,7 +33,7 @@
 #include "LCD_Test.h"
 #include "LCD_1in28.h"
 #include "stm32g0xx_hal_flash.h"
-#include "NRF24L01.h"
+//#include "NRF24L01.h"
 
 /* USER CODE END Includes */
 
@@ -65,6 +66,33 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+//void read_register_multi (uint8_t reg, uint8_t *data, int size){
+//
+//    uint8_t command = NRF24L01P_CMD_R_REGISTER | reg;
+//    uint8_t status;
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+//    HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+//    for(int i = 0; i<size; i++)
+//    	HAL_SPI_Receive(&hspi1, &data[i], 1, 2000);
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+//}
+//void write_register(uint8_t reg)
+//{
+//
+//
+//	uint8_t TX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
+//    uint8_t command = NRF24L01P_CMD_W_REGISTER | reg;
+//    uint8_t status;
+//    //uint8_t write_val = value;
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+//    HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+//    for (int i = 0; i <5; i++)
+//    	HAL_SPI_Transmit(&hspi1, &TX_addr[i], 1, 2000);
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+//    //return write_val;
+//}
 
 /* USER CODE END 0 */
 
@@ -105,8 +133,20 @@ int main(void)
 
   int32_t counter = 0;
   int32_t raw = 0;
-  uint8_t TX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
-  uint8_t TX_data[] = "Hello\n";
+//  uint8_t TX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
+//  uint8_t TX_data[] = "Hello\n";
+//  uint8_t data[5] ={0};
+//  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+
+  //write_register(0x10);
+//  read_register_multi(0x10, data, 5);
+//  if(data[0] == 0xE7)
+//	  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+//
+//
+//  nrf_init();
+//  nrf_tx_mode(TX_addr, 10);
+
 
 
   	DEV_Module_Init();
@@ -128,6 +168,19 @@ int main(void)
 	  Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
 
 
+
+
+
+
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+
+
 	  HAL_ADC_Start(&hadc1);
   	  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
       raw = HAL_ADC_GetValue(&hadc1);
@@ -137,20 +190,6 @@ int main(void)
 	  Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
 	  HAL_Delay(250);
 
-
-	  nrf_init();
-	  nrf_tx_mode(TX_addr, 10);
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-	  if(nrf_transmit(TX_data) == 1){
-		  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-
-	  }
-	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

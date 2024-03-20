@@ -1,0 +1,5 @@
+../Core/Src/main.c:64:6:read_reg_multi	2
+../Core/Src/main.c:75:6:write_register	2
+../Core/Src/main.c:100:5:main	2
+../Core/Src/main.c:173:6:SystemClock_Config	3
+../Core/Src/main.c:223:6:Error_Handler	1

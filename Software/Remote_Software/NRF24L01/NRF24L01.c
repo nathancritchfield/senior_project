@@ -9,35 +9,63 @@
 
 uint8_t nrf_read_reg(uint8_t reg)
 {
-    uint8_t command = NRF24_CMD_R_REGISTER | reg;
-    uint8_t status;
+//    uint8_t command = NRF24_CMD_R_REGISTER | reg;
+//    uint8_t status;
+//
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+//    HAL_SPI_Transmit(&hspi1, &command, 1, 100);
+//    HAL_SPI_Receive(&hspi1, &status, 1, 100);
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+//
+//    return status;
+	uint8_t command = NRF24_CMD_R_REGISTER | reg;
+	uint8_t status;
+	uint8_t data;
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+	HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+	HAL_SPI_Receive(&hspi1, &data, 1, 2000);
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+	return data;
 
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
-    HAL_SPI_Transmit(&hspi1, &command, 1, 100);
-    HAL_SPI_Receive(&hspi1, &status, 1, 100);
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
-
-    return status;
 }
 
 void nrf_read_reg_multi (uint8_t reg, uint8_t *data, int size){
+	/*
     HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
 
     HAL_SPI_Transmit(&hspi1, &reg, 1, 100);
     HAL_SPI_Receive(&hspi1, data, size, 1000);
 
     HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+    */
+
+	uint8_t command = NRF24_CMD_R_REGISTER | reg;
+	uint8_t status;
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+	HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+	for(int i = 0; i<size; i++)
+		HAL_SPI_Receive(&hspi1, &data[i], 1, 2000);
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
 }
 
 void nrf_write_reg(uint8_t reg, uint8_t value)
 {
-	uint8_t buf[2];
-    buf[0] = NRF24_CMD_W_REGISTER | reg;
-    buf[1] = value;
+//	uint8_t buf[2];
+//    buf[0] = NRF24_CMD_W_REGISTER | reg;
+//    buf[1] = value;
+//
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+//    HAL_SPI_Transmit(&hspi1, buf, 2, 1000);
+//    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
 
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
-    HAL_SPI_Transmit(&hspi1, buf, 2, 1000);
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+	uint8_t command = NRF24_CMD_W_REGISTER | reg;
+	uint8_t status;
+	uint8_t write_val = value;
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+	HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+	HAL_SPI_Transmit(&hspi1, &write_val, 1, 2000);
+	HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
 
 }
 
@@ -78,7 +106,7 @@ void nrf_init(void){
 
     nrf_write_reg(NRF24_REG_RF_SETUP, 0x0E); //Power = 0dB, data rate = 2Mbps
 
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(NRF_CE_GPIO_Port, NRF_CE_Pin, GPIO_PIN_RESET);
 
 }
 
@@ -91,6 +119,12 @@ void nrf_tx_mode(uint8_t *addr, uint8_t channel){
     uint8_t config = nrf_read_reg(NRF24_REG_CONFIG);
     config = config | (1<<1);
     nrf_write_reg(NRF24_REG_CONFIG, config);
+
+    //testing that I added
+    uint8_t test = 0;
+    test = nrf_read_reg(NRF24_REG_RF_SETUP);
+    uint8_t test2[5] = {0};
+    nrf_read_reg_multi(NRF24_REG_TX_ADDR, test2, 5);
 
     HAL_GPIO_WritePin(NRF_CE_GPIO_Port, NRF_CE_Pin, GPIO_PIN_SET);
 }
@@ -147,4 +181,34 @@ void nrf_rx_mode(uint8_t *addr, uint8_t channel){
 
 uint8_t is_data_availible(int pipenum){
 	uint8_t status = nrf_read_reg(NRF24_REG_STATUS);
+
+	if((status & (1<<6)) && (status & (pipenum<<1))){
+		nrf_write_reg(NRF24_REG_STATUS,(1<<6));
+
+		return 1;
+	}
+	return 0;
+}
+
+void nrf_receive(uint8_t *data){
+	uint8_t cmd = 0;
+
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+
+    //TX command
+    cmd = NRF24_CMD_R_RX_PAYLOAD;
+    HAL_SPI_Transmit(&hspi1, &cmd, 1, 100);
+
+    //TX data send
+    HAL_SPI_Receive(&hspi1, data, 32, 1000);
+
+
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+
+    HAL_Delay(1);
+
+    cmd = NRF24_CMD_FLUSH_RX;
+    nrf_send_cmd(cmd);
+
+
 }

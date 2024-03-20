@@ -1,4 +1,6 @@
 /* USER CODE BEGIN Header */
+#define NRF24L01P_CMD_R_REGISTER                  0b00000000
+#define NRF24L01P_CMD_W_REGISTER                  0b00100000
 /**
   ******************************************************************************
   * @file           : main.c
@@ -23,6 +25,7 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "NRF24L01.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -53,11 +56,39 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+void read_reg_multi (uint8_t reg, uint8_t *data, int size){
+
+    uint8_t command = NRF24L01P_CMD_R_REGISTER | reg;
+    uint8_t status;
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+    HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+    for(int i = 0; i<size; i++)
+    	HAL_SPI_Receive(&hspi1, &data[i], 1, 2000);
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+}
+void write_register(uint8_t reg)
+{
+
+
+	uint8_t TX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
+    uint8_t command = NRF24L01P_CMD_W_REGISTER | reg;
+    uint8_t status;
+    //uint8_t write_val = value;
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
+    HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
+    for (int i = 0; i <5; i++)
+    	HAL_SPI_Transmit(&hspi1, &TX_addr[i], 1, 2000);
+    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
+    //return write_val;
+}
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+uint8_t RX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
+uint8_t RX_data[32];
 
 /* USER CODE END 0 */
 
@@ -95,37 +126,54 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
+//  	uint8_t data[5] ={0};
+//	HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_RESET);
+//
+////	write_register(0x10);
+//	read_reg_multi(0x10, data, 5);
+//	if(data[0] == 0xE7)
+//	  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_SET);
+
+
+  nrf_init();
+  nrf_rx_mode(RX_addr, 10);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  uint8_t tx_buf[3] = {0x05, 0x00, 0x00};
-  uint8_t offset[1] = {0x05};
-  uint8_t rx_buf[2] = {0x00, 0x00};
-  HAL_GPIO_WritePin(WP_GPIO_Port, WP_Pin, GPIO_PIN_RESET);
-
-  HAL_I2C_Master_Transmit(&hi2c2, 0xA0, offset, 1, HAL_MAX_DELAY);
-  HAL_I2C_Master_Receive(&hi2c2, 0xA0, rx_buf, 2, HAL_MAX_DELAY);
-
-  tx_buf[2] = rx_buf[1];
-  tx_buf[1] = rx_buf[0];
+//Used for the FRAM
+//  uint8_t tx_buf[3] = {0x05, 0x00, 0x00};
+//  uint8_t offset[1] = {0x05};
+//  uint8_t rx_buf[2] = {0x00, 0x00};
+//  HAL_GPIO_WritePin(WP_GPIO_Port, WP_Pin, GPIO_PIN_RESET);
+//
+//  HAL_I2C_Master_Transmit(&hi2c2, 0xA0, offset, 1, HAL_MAX_DELAY);
+//  HAL_I2C_Master_Receive(&hi2c2, 0xA0, rx_buf, 2, HAL_MAX_DELAY);
+//
+//  tx_buf[2] = rx_buf[1];
+//  tx_buf[1] = rx_buf[0];
 
 
 
   while (1)
   {
 
-	  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_SET);
-	  HAL_Delay(500);
-	  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_RESET);
-	  HAL_Delay(500);
-
-	  HAL_I2C_Master_Transmit(&hi2c2, 0xA0, tx_buf, 3, HAL_MAX_DELAY);
-	  HAL_I2C_Master_Transmit(&hi2c2, 0xA0, offset, 1, HAL_MAX_DELAY);
-	  HAL_I2C_Master_Receive(&hi2c2, 0xA0, rx_buf, 2, HAL_MAX_DELAY);
-
-	  tx_buf[2]++;
+	  if(is_data_availible(1) == 1){
+		  nrf_receive(RX_data);
+		  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port,    STATUS_LED_Pin, GPIO_PIN_SET);
+	  }
+//Used for the FRAM
+//	  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port,    STATUS_LED_Pin, GPIO_PIN_SET);
+//	  HAL_Delay(500);
+//	  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_RESET);
+//	  HAL_Delay(500);
+//
+//	  HAL_I2C_Master_Transmit(&hi2c2, 0xA0, tx_buf, 3, HAL_MAX_DELAY);
+//	  HAL_I2C_Master_Transmit(&hi2c2, 0xA0, offset, 1, HAL_MAX_DELAY);
+//	  HAL_I2C_Master_Receive(&hi2c2, 0xA0, rx_buf, 2, HAL_MAX_DELAY);
+//
+//	  tx_buf[2]++;
 
 
     /* USER CODE END WHILE */

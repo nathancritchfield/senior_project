@@ -1,26 +1,17 @@
-16:45:29 **** Incremental Build of configuration Release for project Remote_Software ****
+15:00:41 **** Incremental Build of configuration Debug for project Remote_Software ****
 make -j12 all 
-arm-none-eabi-gcc "../NRF24L01/NRF24L01.c" -mcpu=cortex-m0plus -std=gnu11 -DUSE_HAL_DRIVER -DSTM32G030xx -c -I../Core/Inc -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/NRF24L01" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/LCD" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"NRF24L01/NRF24L01.d" -MT"NRF24L01/NRF24L01.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "NRF24L01/NRF24L01.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -DUSE_HAL_DRIVER -DSTM32G030xx -c -I../Core/Inc -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/NRF24L01" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/LCD" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../NRF24L01/NRF24L01.c: In function 'is_data_availible':
-../NRF24L01/NRF24L01.c:149:39: error: 'NRF24_REG_STATUS' undeclared (first use in this function); did you mean 'NRF24_REG_FIFO_STATUS'?
-  149 |         uint8_t status = nrf_read_reg(NRF24_REG_STATUS);
-      |                                       ^~~~~~~~~~~~~~~~
-      |                                       NRF24_REG_FIFO_STATUS
-../NRF24L01/NRF24L01.c:149:39: note: each undeclared identifier is reported only once for each function it appears in
-../NRF24L01/NRF24L01.c:149:17: warning: unused variable 'status' [-Wunused-variable]
-  149 |         uint8_t status = nrf_read_reg(NRF24_REG_STATUS);
-      |                 ^~~~~~
-../NRF24L01/NRF24L01.c:150:1: warning: control reaches end of non-void function [-Wreturn-type]
-  150 | }
-      | ^
-make: *** [NRF24L01/subdir.mk:19: NRF24L01/NRF24L01.o] Error 1
-make: *** Waiting for unfinished jobs....
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:109:11: warning: unused variable 'TX_data' [-Wunused-variable]
-  109 |   uint8_t TX_data[] = "Hello\n";
-      |           ^~~~~~~
-"make -j12 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G030xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/LCD" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Config" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/GUI_DEV" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/Fonts" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/User/example" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote_Software/NRF24L01" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Remote_Software.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote_Software\STM32G030F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Remote_Software.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Remote_Software.elf
+ 
+arm-none-eabi-size  Remote_Software.elf 
+arm-none-eabi-objdump -h -S Remote_Software.elf  > "Remote_Software.list"
+   text	   data	    bss	    dec	    hex	filename
+  27960	     28	   2132	  30120	   75a8	Remote_Software.elf
+Finished building: default.size.stdout
+ 
+Finished building: Remote_Software.list
+ 
 
-16:45:29 Build Failed. 3 errors, 3 warnings. (took 758ms)
+15:00:44 Build Finished. 0 errors, 0 warnings. (took 3s.151ms)
 

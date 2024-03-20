@@ -63,8 +63,10 @@ void Error_Handler(void);
 #define SK6812_OUT_GPIO_Port GPIOC
 #define GEN_OUT_Pin GPIO_PIN_0
 #define GEN_OUT_GPIO_Port GPIOA
-#define SPI1_CE_Pin GPIO_PIN_3
-#define SPI1_CE_GPIO_Port GPIOA
+#define NRF_CE_Pin GPIO_PIN_3
+#define NRF_CE_GPIO_Port GPIOA
+#define SPI1_CSN_Pin GPIO_PIN_4
+#define SPI1_CSN_GPIO_Port GPIOA
 #define SPI1_IRQ_Pin GPIO_PIN_5
 #define SPI1_IRQ_GPIO_Port GPIOA
 #define STATUS_LED_Pin GPIO_PIN_7
