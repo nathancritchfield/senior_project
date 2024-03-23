@@ -1,6 +1,4 @@
 /* USER CODE BEGIN Header */
-#define NRF24L01P_CMD_R_REGISTER                  0b00000000
-#define NRF24L01P_CMD_W_REGISTER                  0b00100000
 /**
   ******************************************************************************
   * @file           : main.c
@@ -61,35 +59,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-void read_reg_multi (uint8_t reg, uint8_t *data, int size){
-
-    uint8_t command = NRF24L01P_CMD_R_REGISTER | reg;
-    uint8_t status;
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
-    HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
-    for(int i = 0; i<size; i++)
-    	HAL_SPI_Receive(&hspi1, &data[i], 1, 2000);
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
-}
-void write_register(uint8_t reg)
-{
-
-
-	uint8_t TX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
-    uint8_t command = NRF24L01P_CMD_W_REGISTER | reg;
-    uint8_t status;
-    //uint8_t write_val = value;
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_RESET);
-    HAL_SPI_TransmitReceive(&hspi1, &command, &status, 1, 2000);
-    for (int i = 0; i <5; i++)
-    	HAL_SPI_Transmit(&hspi1, &TX_addr[i], 1, 2000);
-    HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
-    //return write_val;
-}
-
-
-
 
 /* USER CODE END 0 */
 
@@ -126,14 +95,6 @@ int main(void)
   MX_USART1_UART_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-
-//  uint8_t data[5] ={0};
-//  	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-//
-//  	write_register(0x10);
-//  	read_reg_multi(0x10, data, 5);
-//  	if(data[0] == 0xEE)
-//  	  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 
 
   uint8_t TX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
