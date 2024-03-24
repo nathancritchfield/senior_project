@@ -1,0 +1,2 @@
+../VESC/VESC.c:41:16:crc16	12	static
+../VESC/VESC.c:50:5:VESCReceiveMessage	280	static

@@ -1,0 +1,11 @@
+../NRF24L01/NRF24L01.c:10:9:nrf_read_reg	40	static
+../NRF24L01/NRF24L01.c:32:6:nrf_read_reg_multi	48	static
+../NRF24L01/NRF24L01.c:52:6:nrf_write_reg	40	static
+../NRF24L01/NRF24L01.c:72:6:nrf_write_reg_multi	48	static
+../NRF24L01/NRF24L01.c:85:6:nrf_send_cmd	16	static
+../NRF24L01/NRF24L01.c:93:6:nrf_init	8	static
+../NRF24L01/NRF24L01.c:114:6:nrf_tx_mode	32	static
+../NRF24L01/NRF24L01.c:127:9:nrf_transmit	40	static
+../NRF24L01/NRF24L01.c:158:6:nrf_rx_mode	32	static
+../NRF24L01/NRF24L01.c:183:9:is_data_availible	32	static
+../NRF24L01/NRF24L01.c:194:6:nrf_receive	32	static
