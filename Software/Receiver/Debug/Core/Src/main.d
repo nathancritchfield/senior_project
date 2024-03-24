@@ -36,7 +36,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h \
  ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/spi.h ../Core/Inc/tim.h \
  ../Core/Inc/usart.h ../Core/Inc/gpio.h \
- C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01/NRF24L01.h
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01/NRF24L01.h \
+ C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/VESC/VESC.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 ../Core/Inc/stm32g0xx_hal_conf.h:
@@ -80,3 +81,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/usart.h:
 ../Core/Inc/gpio.h:
 C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01/NRF24L01.h:
+C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/VESC/VESC.h:

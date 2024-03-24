@@ -1,21 +1,43 @@
-23:13:02 **** Incremental Build of configuration Debug for project Receiver ****
+18:47:15 **** Incremental Build of configuration Debug for project Receiver ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/VESC" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:226:19: warning: unused variable 'payloadLen' [-Wunused-variable]
+  226 |           uint8_t payloadLen = VESCReceiveMessage(payloadReceived);
+      |                   ^~~~~~~~~~
 arm-none-eabi-gcc -o "Receiver.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Receiver\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Receiver.elf
  
 arm-none-eabi-size  Receiver.elf 
 arm-none-eabi-objdump -h -S Receiver.elf  > "Receiver.list"
    text	   data	    bss	    dec	    hex	filename
-  22024	     28	   2012	  24064	   5e00	Receiver.elf
+  22112	     28	   2012	  24152	   5e58	Receiver.elf
 Finished building: default.size.stdout
  
 Finished building: Receiver.list
  
-23:13:10 **** Incremental Build of configuration Debug for project Receiver ****
+18:47:23 **** Incremental Build of configuration Debug for project Receiver ****
 make -j12 all 
 arm-none-eabi-size  Receiver.elf 
    text	   data	    bss	    dec	    hex	filename
-  22024	     28	   2012	  24064	   5e00	Receiver.elf
+  22112	     28	   2012	  24152	   5e58	Receiver.elf
 Finished building: default.size.stdout
+ 
+18:49:40 **** Incremental Build of configuration Debug for project Receiver ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/VESC" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:203:19: warning: unused variable 'payloadLen' [-Wunused-variable]
+  203 |           uint8_t payloadLen = VESCReceiveMessage(payloadReceived);
+      |                   ^~~~~~~~~~
+arm-none-eabi-gcc -o "Receiver.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Receiver\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Receiver.elf
+ 
+arm-none-eabi-size  Receiver.elf 
+arm-none-eabi-objdump -h -S Receiver.elf  > "Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+  22192	     28	   2012	  24232	   5ea8	Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: Receiver.list
  
