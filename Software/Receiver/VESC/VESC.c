@@ -7,6 +7,20 @@
 #include "VESC.h"
 #include "usart.h"
 #include <string.h>
+#include "datatypes.h"
+#include "buffer.h"
+
+/** Variable to hold measurements returned from VESC */
+struct dataPackage VESCdata;
+
+/** Variable to hold nunchuck values */
+struct nunchuckPackage VESCnunchuck;
+
+/** Variable to hold firmware version */
+struct FWversionPackage VESCfw_version;
+
+
+
 // CRC Table
 const unsigned short crc16_tab[] = { 0x0000, 0x1021, 0x2042, 0x3063, 0x4084,
 		0x50a5, 0x60c6, 0x70e7, 0x8108, 0x9129, 0xa14a, 0xb16b, 0xc18c, 0xd1ad,
@@ -47,6 +61,55 @@ unsigned short crc16(unsigned char *buf, unsigned int len) {
 	return cksum;
 }
 
+int VESCProcessPacket(uint8_t * message) {
+
+	COMM_PACKET_ID packetId;
+	int32_t index = 0;
+
+	packetId = (COMM_PACKET_ID)message[0];
+	message++; // Removes the packetId from the actual message (payload)
+
+	switch (packetId){
+		case COMM_FW_VERSION: // Structure defined here: https://github.com/vedderb/bldc/blob/43c3bbaf91f5052a35b75c2ff17b5fe99fad94d1/commands.c#L164
+
+			VESCfw_version.major = message[index++];
+			VESCfw_version.minor = message[index++];
+			return true;
+		case COMM_GET_VALUES: // Structure defined here: https://github.com/vedderb/bldc/blob/43c3bbaf91f5052a35b75c2ff17b5fe99fad94d1/commands.c#L164
+
+			VESCdata.tempMosfet 		= buffer_get_float16(message, 10.0, &index); 	// 2 bytes - mc_interface_temp_fet_filtered()
+			VESCdata.tempMotor 			= buffer_get_float16(message, 10.0, &index); 	// 2 bytes - mc_interface_temp_motor_filtered()
+			VESCdata.avgMotorCurrent 	= buffer_get_float32(message, 100.0, &index); // 4 bytes - mc_interface_read_reset_avg_motor_current()
+			VESCdata.avgInputCurrent 	= buffer_get_float32(message, 100.0, &index); // 4 bytes - mc_interface_read_reset_avg_input_current()
+			index += 4; // Skip 4 bytes - mc_interface_read_reset_avg_id()
+			index += 4; // Skip 4 bytes - mc_interface_read_reset_avg_iq()
+			VESCdata.dutyCycleNow 		= buffer_get_float16(message, 1000.0, &index); 	// 2 bytes - mc_interface_get_duty_cycle_now()
+			VESCdata.rpm 				= buffer_get_float32(message, 1.0, &index);		// 4 bytes - mc_interface_get_rpm()
+			VESCdata.inpVoltage 		= buffer_get_float16(message, 10.0, &index);		// 2 bytes - GET_INPUT_VOLTAGE()
+			VESCdata.ampHours 			= buffer_get_float32(message, 10000.0, &index);	// 4 bytes - mc_interface_get_amp_hours(false)
+			VESCdata.ampHoursCharged 	= buffer_get_float32(message, 10000.0, &index);	// 4 bytes - mc_interface_get_amp_hours_charged(false)
+			VESCdata.wattHours			= buffer_get_float32(message, 10000.0, &index);	// 4 bytes - mc_interface_get_watt_hours(false)
+			VESCdata.wattHoursCharged	= buffer_get_float32(message, 10000.0, &index);	// 4 bytes - mc_interface_get_watt_hours_charged(false)
+			VESCdata.tachometer 		= buffer_get_int32(message, &index);				// 4 bytes - mc_interface_get_tachometer_value(false)
+			VESCdata.tachometerAbs 		= buffer_get_int32(message, &index);				// 4 bytes - mc_interface_get_tachometer_abs_value(false)
+			VESCdata.error 				= (mc_fault_code)message[index++];								// 1 byte  - mc_interface_get_fault()
+			VESCdata.pidPos				= buffer_get_float32(message, 1000000.0, &index);	// 4 bytes - mc_interface_get_pid_pos_now()
+			VESCdata.id					= message[index++];								// 1 byte  - app_get_configuration()->controller_id
+
+			return true;
+
+		break;
+
+		/* case COMM_GET_VALUES_SELECTIVE:
+
+			uint32_t mask = 0xFFFFFFFF; */
+
+		default:
+			return false;
+		break;
+	}
+}
+
 int VESCSendMessage(uint8_t *payload, int payloadSize){
 	int count = 0;
 	uint8_t messageSend[256];
@@ -75,7 +138,6 @@ int VESCSendMessage(uint8_t *payload, int payloadSize){
 }
 
 int VESCReceiveMessage(uint8_t *payloadReceived){
-	//Need to check if I should be using payload received or message received
 	uint8_t messageStart[2] = {0};
 	uint8_t messageReceived[256] = {0};
 
@@ -108,4 +170,65 @@ int VESCReceiveMessage(uint8_t *payloadReceived){
 	else{
 		return 0;
 	}
+}
+
+
+
+int VESCGetFWVersion(uint8_t CAN_ID){
+	int32_t index = 0;
+	int payloadSize = (CAN_ID == 0 ? 1 : 3);
+	uint8_t payload[3];
+
+	uint8_t message[256];
+	int messageLength;
+
+	if (CAN_ID != 0) {
+		payload[index++] = COMM_FORWARD_CAN;
+		payload[index++] = CAN_ID;
+	}
+	payload[index++] = COMM_FW_VERSION;
+	VESCSendMessage(payload, payloadSize);
+
+	messageLength = VESCReceiveMessage(message);
+	if(messageLength > 0){
+		return VESCProcessPacket(message);
+	}
+	else {
+		return 0;
+	}
+}
+
+int VESCGetValues(uint8_t CAN_ID){
+
+	int32_t index = 0;
+	int payloadSize = (CAN_ID == 0 ? 1 : 3);
+	uint8_t payload[3];
+	if (CAN_ID != 0) {
+		payload[index++] = COMM_FORWARD_CAN;
+		payload[index++] = CAN_ID;
+	}
+	payload[index++] = COMM_GET_VALUES;
+
+	VESCSendMessage(payload, payloadSize);
+
+	uint8_t message[256];
+	int messageLength = VESCReceiveMessage(message);
+
+	if (messageLength > 55) {
+		return VESCProcessPacket(message);
+	}
+	return 0;
+}
+
+void VESCSetCurrent(float current, uint8_t CAN_ID){
+	int32_t index = 0;
+	int payloadSize = (CAN_ID == 0 ? 5 : 7);
+	uint8_t payload[7];
+	if (CAN_ID != 0) {
+		payload[index++] = COMM_FORWARD_CAN;
+		payload[index++] = CAN_ID;
+	}
+	payload[index++] = COMM_SET_CURRENT;
+	buffer_append_int32(payload, (int32_t)(current * 1000), &index);
+	VESCSendMessage(payload, payloadSize);
 }

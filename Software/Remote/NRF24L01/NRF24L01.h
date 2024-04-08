@@ -18,6 +18,8 @@ void nrf_rx_mode(uint8_t *addr, uint8_t channel);
 uint8_t is_data_availible(int pipenum);
 void nrf_receive(uint8_t *data);
 
+int nrf_send_adc(uint32_t adc_val);
+
 //void nrf_read_reg_multi (uint8_t reg, uint8_t *data, int size);
 //void nrf_write_reg(uint8_t reg, uint8_t value);
 
@@ -53,6 +55,9 @@ void nrf_receive(uint8_t *data);
 
 #define NRF24_REG_FIFO_STATUS			0x17
 
-
+// Data types
+typedef enum {
+	CMD_SEND_ADC = 0
+} NRF24_CMD_t;
 
 #endif /* NRF24L01_H_ */

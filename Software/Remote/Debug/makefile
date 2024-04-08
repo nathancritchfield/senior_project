@@ -9,6 +9,11 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include User/example/subdir.mk
+-include User/LCD/subdir.mk
+-include User/GUI_DEV/subdir.mk
+-include User/Fonts/subdir.mk
+-include User/Config/subdir.mk
 -include NRF24L01/subdir.mk
 -include Drivers/STM32G0xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
@@ -62,7 +67,7 @@ main-build: Remote.elf secondary-outputs
 
 # Tool invocations
 Remote.elf Remote.map: $(OBJS) $(USER_OBJS) C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote\STM32G031F8PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Remote.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Remote.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "Remote.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Remote.map" -Wl,--gc-sections -static -L"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote\User" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

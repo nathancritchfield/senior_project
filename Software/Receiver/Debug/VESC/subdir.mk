@@ -5,13 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../VESC/VESC.c 
+../VESC/VESC.c \
+../VESC/buffer.c 
 
 OBJS += \
-./VESC/VESC.o 
+./VESC/VESC.o \
+./VESC/buffer.o 
 
 C_DEPS += \
-./VESC/VESC.d 
+./VESC/VESC.d \
+./VESC/buffer.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +24,7 @@ VESC/%.o VESC/%.su VESC/%.cyclo: ../VESC/%.c VESC/subdir.mk
 clean: clean-VESC
 
 clean-VESC:
-	-$(RM) ./VESC/VESC.cyclo ./VESC/VESC.d ./VESC/VESC.o ./VESC/VESC.su
+	-$(RM) ./VESC/VESC.cyclo ./VESC/VESC.d ./VESC/VESC.o ./VESC/VESC.su ./VESC/buffer.cyclo ./VESC/buffer.d ./VESC/buffer.o ./VESC/buffer.su
 
 .PHONY: clean-VESC
 

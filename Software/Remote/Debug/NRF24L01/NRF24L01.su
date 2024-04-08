@@ -5,7 +5,8 @@
 ../NRF24L01/NRF24L01.c:85:6:nrf_send_cmd	16	static
 ../NRF24L01/NRF24L01.c:93:6:nrf_init	8	static
 ../NRF24L01/NRF24L01.c:114:6:nrf_tx_mode	32	static
-../NRF24L01/NRF24L01.c:133:9:nrf_transmit	40	static
-../NRF24L01/NRF24L01.c:164:6:nrf_rx_mode	32	static
-../NRF24L01/NRF24L01.c:184:9:is_data_availible	32	static
-../NRF24L01/NRF24L01.c:195:6:nrf_receive	32	static
+../NRF24L01/NRF24L01.c:131:9:nrf_transmit	40	static
+../NRF24L01/NRF24L01.c:162:6:nrf_rx_mode	32	static
+../NRF24L01/NRF24L01.c:182:9:is_data_availible	32	static
+../NRF24L01/NRF24L01.c:193:6:nrf_receive	32	static
+../NRF24L01/NRF24L01.c:216:5:nrf_send_adc	64	static

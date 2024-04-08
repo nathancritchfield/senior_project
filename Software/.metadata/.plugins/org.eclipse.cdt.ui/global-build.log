@@ -1,43 +1,45 @@
-18:47:15 **** Incremental Build of configuration Debug for project Receiver ****
+18:08:33 **** Incremental Build of configuration Debug for project Remote ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/VESC" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/User/Fonts" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/User/Config" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/User/example" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/User/GUI_DEV" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/User/LCD" -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/NRF24L01" -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Remote/User" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:226:19: warning: unused variable 'payloadLen' [-Wunused-variable]
-  226 |           uint8_t payloadLen = VESCReceiveMessage(payloadReceived);
-      |                   ^~~~~~~~~~
-arm-none-eabi-gcc -o "Receiver.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Receiver\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Receiver.elf
+../Core/Src/main.c:147:11: warning: unused variable 'RX_data' [-Wunused-variable]
+  147 |   uint8_t RX_data[32] = {0};
+      |           ^~~~~~~
+../Core/Src/main.c:114:12: warning: unused variable 'counter' [-Wunused-variable]
+  114 |   uint32_t counter = 0;
+      |            ^~~~~~~
+../Core/Src/main.c:112:11: warning: unused variable 'RX_addr' [-Wunused-variable]
+  112 |   uint8_t RX_addr[] = {0x99, 0x88, 0x77, 0x66, 0x55};
+      |           ^~~~~~~
+arm-none-eabi-gcc -o "Remote.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Remote.map" -Wl,--gc-sections -static -L"C:\Users\nate_\Documents\Electric_Skateboard\Software\Remote\User" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Remote.elf
  
-arm-none-eabi-size  Receiver.elf 
-arm-none-eabi-objdump -h -S Receiver.elf  > "Receiver.list"
+arm-none-eabi-size  Remote.elf 
+arm-none-eabi-objdump -h -S Remote.elf  > "Remote.list"
    text	   data	    bss	    dec	    hex	filename
-  22112	     28	   2012	  24152	   5e58	Receiver.elf
+  22780	     20	   2172	  24972	   618c	Remote.elf
 Finished building: default.size.stdout
  
-Finished building: Receiver.list
+Finished building: Remote.list
  
-18:47:23 **** Incremental Build of configuration Debug for project Receiver ****
+18:09:58 **** Incremental Build of configuration Debug for project Remote ****
 make -j12 all 
-arm-none-eabi-size  Receiver.elf 
+arm-none-eabi-size  Remote.elf 
    text	   data	    bss	    dec	    hex	filename
-  22112	     28	   2012	  24152	   5e58	Receiver.elf
+  22780	     20	   2172	  24972	   618c	Remote.elf
 Finished building: default.size.stdout
  
-18:49:40 **** Incremental Build of configuration Debug for project Receiver ****
+18:38:08 **** Incremental Build of configuration Debug for project Remote ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G031xx -c -I../Core/Inc -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/VESC" -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/nate_/Documents/Electric_Skateboard/Software/Receiver/NRF24L01" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:203:19: warning: unused variable 'payloadLen' [-Wunused-variable]
-  203 |           uint8_t payloadLen = VESCReceiveMessage(payloadReceived);
-      |                   ^~~~~~~~~~
-arm-none-eabi-gcc -o "Receiver.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\nate_\Documents\Electric_Skateboard\Software\Receiver\STM32G031F8PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Receiver.elf
- 
-arm-none-eabi-size  Receiver.elf 
-arm-none-eabi-objdump -h -S Receiver.elf  > "Receiver.list"
+arm-none-eabi-size  Remote.elf 
    text	   data	    bss	    dec	    hex	filename
-  22192	     28	   2012	  24232	   5ea8	Receiver.elf
+  22780	     20	   2172	  24972	   618c	Remote.elf
 Finished building: default.size.stdout
  
-Finished building: Receiver.list
+18:39:23 **** Incremental Build of configuration Debug for project Remote ****
+make -j12 all 
+arm-none-eabi-size  Remote.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22780	     20	   2172	  24972	   618c	Remote.elf
+Finished building: default.size.stdout
  

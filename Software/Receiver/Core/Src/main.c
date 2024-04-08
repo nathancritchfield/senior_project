@@ -102,7 +102,9 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t RX_addr[] = {0xEE, 0xDD, 0xCC, 0xBB, 0xAA};
+uint8_t TX_addr[] = {0x99, 0x88, 0x77, 0x66, 0x55};
 uint8_t RX_data[32];
+uint8_t TX_data[32] = {0};
 
 /* USER CODE END 0 */
 
@@ -168,17 +170,48 @@ int main(void)
 //  tx_buf[2] = rx_buf[1];
 //  tx_buf[1] = rx_buf[0];
 
-  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, GPIO_PIN_RESET);
   HAL_Delay(1000);
 
+  float vesc_current = 0;
+  uint16_t adc_read = 3300;
 
   while (1)
   {
 
 	  if(is_data_availible(1) == 1){
 		  nrf_receive(RX_data);
-		  //HAL_GPIO_WritePin(STATUS_LED_GPIO_Port,    STATUS_LED_Pin, GPIO_PIN_SET);
+
+		  HAL_GPIO_TogglePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin);
+
+		  adc_read = (uint16_t)RX_data[1];
+		  adc_read = adc_read << 8;
+		  adc_read |= (uint16_t)(RX_data[2]) & 0x0F;
+
+		  if(adc_read >= 3200 && adc_read <= 3400){
+			  vesc_current = 0;
+		  }
+		  else if (adc_read < 3200){
+			  vesc_current = 10 - (adc_read * 0.003125);
+		  }
+		  else if (adc_read > 3400){
+			  vesc_current = 0;
+		  }
+
+		  if(vesc_current > 10){
+			  vesc_current = 10;
+		  }
+		  VESCSetCurrent(vesc_current, 0);
+		  VESCSetCurrent(vesc_current, 89);
+
+
+
+//		  nrf_tx_mode(TX_addr, 10);
+//		  int trans_stat = nrf_transmit(TX_data);
+//		  TX_data[0]++;
 	  }
+
+
 //Used for the FRAM
 //	  HAL_GPIO_WritePin(STATUS_LED_GPIO_Port,    STATUS_LED_Pin, GPIO_PIN_SET);
 //	  HAL_Delay(500);
@@ -192,18 +225,16 @@ int main(void)
 //	  tx_buf[2]++;
 
 
-	  uint8_t payload[1];
-	  //Set communication type to get firmware
-	  payload[0] = 0;
-	  VESCSendMessage(payload, 1);
+//	  VESCGetFWVersion(0);
+//	  HAL_Delay(1000);
+//	  VESCGetValues(0);
 
-
-	  /********Receiving the payload**********/
-	  uint8_t payloadReceived[256] = {0};
-	  uint8_t payloadLen = VESCReceiveMessage(payloadReceived);
-
-	  HAL_Delay(1000);
-
+//	  HAL_Delay(1000);
+//	  VESCSetCurrent(0, 0);
+//	  VESCSetCurrent(3, 89);
+//	  HAL_Delay(1000);
+//	  VESCSetCurrent(0, 89);
+//	  VESCSetCurrent(3, 0);
 
 
     /* USER CODE END WHILE */

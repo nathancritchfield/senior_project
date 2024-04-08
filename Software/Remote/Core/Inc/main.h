@@ -37,6 +37,8 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
+
+
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -57,7 +59,7 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define BL_Pin GPIO_PIN_7
+#define BL_Pin GPIO_PIN_8
 #define BL_GPIO_Port GPIOB
 #define CS_Pin GPIO_PIN_9
 #define CS_GPIO_Port GPIOB

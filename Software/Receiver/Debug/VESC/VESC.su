@@ -1,3 +1,7 @@
-../VESC/VESC.c:41:16:crc16	24	static
-../VESC/VESC.c:50:5:VESCSendMessage	296	static
-../VESC/VESC.c:77:5:VESCReceiveMessage	296	static
+../VESC/VESC.c:55:16:crc16	24	static
+../VESC/VESC.c:64:5:VESCProcessPacket	32	static
+../VESC/VESC.c:113:5:VESCSendMessage	296	static
+../VESC/VESC.c:140:5:VESCReceiveMessage	296	static
+../VESC/VESC.c:177:5:VESCGetFWVersion	296	static
+../VESC/VESC.c:201:5:VESCGetValues	296	static
+../VESC/VESC.c:223:6:VESCSetCurrent	40	static

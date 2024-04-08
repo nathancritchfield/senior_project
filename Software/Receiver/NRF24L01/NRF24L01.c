@@ -118,7 +118,7 @@ void nrf_tx_mode(uint8_t *addr, uint8_t channel){
     nrf_write_reg_multi(NRF24_REG_TX_ADDR, addr, 5);
 
     uint8_t config = nrf_read_reg(NRF24_REG_CONFIG);
-    config = config | (1<<1);
+    config = (config | ((1<<1) & 0xFE));
     nrf_write_reg(NRF24_REG_CONFIG, config);
 
     HAL_GPIO_WritePin(NRF_CE_GPIO_Port, NRF_CE_Pin, GPIO_PIN_SET);

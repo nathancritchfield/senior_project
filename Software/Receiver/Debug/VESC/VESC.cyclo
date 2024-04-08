@@ -1,3 +1,7 @@
-../VESC/VESC.c:41:16:crc16	2
-../VESC/VESC.c:50:5:VESCSendMessage	2
-../VESC/VESC.c:77:5:VESCReceiveMessage	3
+../VESC/VESC.c:55:16:crc16	2
+../VESC/VESC.c:64:5:VESCProcessPacket	3
+../VESC/VESC.c:113:5:VESCSendMessage	2
+../VESC/VESC.c:140:5:VESCReceiveMessage	3
+../VESC/VESC.c:177:5:VESCGetFWVersion	4
+../VESC/VESC.c:201:5:VESCGetValues	4
+../VESC/VESC.c:223:6:VESCSetCurrent	3

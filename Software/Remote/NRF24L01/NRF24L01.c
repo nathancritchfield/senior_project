@@ -118,14 +118,12 @@ void nrf_tx_mode(uint8_t *addr, uint8_t channel){
     nrf_write_reg_multi(NRF24_REG_TX_ADDR, addr, 5);
 
     uint8_t config = nrf_read_reg(NRF24_REG_CONFIG);
-    config = config | (1<<1);
+    config = (config | ((1<<1) & 0xFE));
     nrf_write_reg(NRF24_REG_CONFIG, config);
 
-    //testing that I added
-    uint8_t test = 0;
-    test = nrf_read_reg(NRF24_REG_RF_SETUP);
-    uint8_t test2[5] = {0};
-    nrf_read_reg_multi(NRF24_REG_TX_ADDR, test2, 5);
+    //Testing I added
+    uint8_t test[5] = {0};
+    nrf_read_reg_multi(NRF24_REG_TX_ADDR, test, 5);
 
     HAL_GPIO_WritePin(NRF_CE_GPIO_Port, NRF_CE_Pin, GPIO_PIN_SET);
 }
@@ -213,4 +211,19 @@ void nrf_receive(uint8_t *data){
     nrf_send_cmd(cmd);
 
 
+}
+
+int nrf_send_adc(uint32_t adc_val){
+	uint8_t index = 0;
+	uint8_t TX_data[32] = {0};
+
+	//Put together 32 byte data packet
+	//0: Command Type
+	//1-31: Payload
+	TX_data[index++] = (uint8_t)CMD_SEND_ADC;
+	TX_data[index++] = (uint8_t)(adc_val >> 8);
+	TX_data[index] 	 = (uint8_t)(adc_val & 0xFF);
+
+	int trans_stat = nrf_transmit(TX_data);
+	return trans_stat;
 }
