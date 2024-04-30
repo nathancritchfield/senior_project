@@ -55,6 +55,7 @@
 /* USER CODE BEGIN PV */
 
 static uint8_t adc_trans_task = 0;
+static uint32_t adc_val = 3300;
 
 /* USER CODE END PV */
 
@@ -121,23 +122,23 @@ int main(void)
 
 
 
-//	DEV_Module_Init();
-//
-//	LCD_1IN28_SetBackLight(1000);
-//	LCD_1IN28_Init(VERTICAL);
-//	//LCD_1IN28_Clear(BLACK);
-//
-//	Paint_NewImage(LCD_1IN28_WIDTH,LCD_1IN28_HEIGHT, 0, BLACK);
-//
-//	Paint_SetClearFuntion(LCD_1IN28_Clear);
-//	Paint_SetDisplayFuntion(LCD_1IN28_DrawPaint);
-//	Paint_DrawString_EN(70, 100, "LOADING...", &Font16, BLACK, DARKORANGE);
-//
-//	Paint_Clear(WHITE);
-//	DEV_Delay_ms(100);
-//
-//	Paint_DrawRectangle(115, 115, 136, 141, DARKRED, 2, 0);
-//	Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
+	DEV_Module_Init();
+
+	LCD_1IN28_SetBackLight(1000);
+	LCD_1IN28_Init(VERTICAL);
+	//LCD_1IN28_Clear(BLACK);
+
+	Paint_NewImage(LCD_1IN28_WIDTH,LCD_1IN28_HEIGHT, 0, BLACK);
+
+	Paint_SetClearFuntion(LCD_1IN28_Clear);
+	Paint_SetDisplayFuntion(LCD_1IN28_DrawPaint);
+	Paint_DrawString_EN(70, 100, "LOADING...", &Font16, BLACK, DARKORANGE);
+
+	Paint_Clear(WHITE);
+	DEV_Delay_ms(100);
+
+	Paint_DrawRectangle(115, 115, 136, 141, DARKRED, 2, 0);
+	Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
 
 
   //Setup the interrupt last
@@ -165,30 +166,11 @@ int main(void)
 //	  TX_data[6]++;
 
 
-//	Paint_ClearWindows(120, 100, 164, 116, BLACK);
-//	Paint_DrawNum(120, 120, counter, &Font16, DARKBLUE, DARKGREEN);
+	Paint_ClearWindows(120, 100, 164, 116, BLACK);
+	Paint_DrawNum(120, 120, adc_val, &Font16, DARKBLUE, DARKGREEN);
 //	counter++;
 //	HAL_Delay(250);
 
-
-
-	/*Code for sending the ADC value over NRF*/
-	if (adc_trans_task == 1){
-		//Read the ADC
-		uint32_t adc_val = 0;
-		HAL_ADC_Start(&hadc1);
-		HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-		adc_val = HAL_ADC_GetValue(&hadc1);
-
-		//NRF Transmission Code
-		int trans_stat = nrf_send_adc(adc_val);
-
-		if(trans_stat == 1){
-			HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-
-		}
-	adc_trans_task = 0;
-	}
 
 	if(HAL_GPIO_ReadPin(Button_In_GPIO_Port, Button_In_Pin) == 0){
 		while(1){
@@ -270,8 +252,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 
   if (htim == &htim2 ){
-	//Code to run for TIM2 IRQ
-	adc_trans_task = 1;
+	//Code to run for TIM2 IRQuint32_t adc_val = 0;
+	HAL_ADC_Start(&hadc1);
+	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+	adc_val = HAL_ADC_GetValue(&hadc1);
+
+	//NRF Transmission Code
+	int trans_stat = nrf_send_adc(adc_val);
 
   }
 }

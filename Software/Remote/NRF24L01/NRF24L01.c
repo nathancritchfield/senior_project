@@ -143,7 +143,7 @@ uint8_t nrf_transmit(uint8_t *data){
 
     HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
 
-    HAL_Delay(1);
+    //HAL_Delay(1);
 
     uint8_t fifo_status = nrf_read_reg(NRF24_REG_FIFO_STATUS);
 
@@ -205,7 +205,7 @@ void nrf_receive(uint8_t *data){
 
     HAL_GPIO_WritePin(SPI1_CSN_GPIO_Port, SPI1_CSN_Pin, GPIO_PIN_SET);
 
-    HAL_Delay(1);
+    //HAL_Delay(1);
 
     cmd = NRF24_CMD_FLUSH_RX;
     nrf_send_cmd(cmd);

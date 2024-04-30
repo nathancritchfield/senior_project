@@ -188,14 +188,14 @@ int main(void)
 		  adc_read = adc_read << 8;
 		  adc_read |= (uint16_t)(RX_data[2]) & 0x0F;
 
-		  if(adc_read >= 3200 && adc_read <= 3400){
-			  vesc_current = 0;
+		  if(adc_read <= 2200){
+			  vesc_current = 0.0;
 		  }
-		  else if (adc_read < 3200){
-			  vesc_current = 10 - (adc_read * 0.003125);
+		  else if (adc_read > 2200){
+			  vesc_current = (float)((adc_read - 2200) * 0.005263158);
 		  }
 		  else if (adc_read > 3400){
-			  vesc_current = 0;
+			  vesc_current = 0.0;
 		  }
 
 		  if(vesc_current > 10){
